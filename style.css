@@ -1,1 +1,154 @@
 
+* {
+  box-sizing: border-box;
+  margin: 0;
+  padding: 0;
+}
+
+body {
+  font-family: Arial, sans-serif;
+  background: #f4f7fb;
+  color: #172033;
+  line-height: 1.6;
+}
+
+.hero {
+  padding: 55px 20px;
+  text-align: center;
+  color: white;
+  background: linear-gradient(135deg, #172554, #2563eb);
+}
+
+.eyebrow {
+  font-size: 12px;
+  letter-spacing: 3px;
+  font-weight: bold;
+  margin-bottom: 8px;
+}
+
+.hero h1 {
+  font-size: clamp(30px, 5vw, 46px);
+  margin-bottom: 8px;
+}
+
+.hero p:last-child {
+  color: #dbeafe;
+}
+
+.container {
+  width: min(1100px, 92%);
+  margin: 35px auto;
+}
+
+.toolbar {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  gap: 20px;
+  flex-wrap: wrap;
+  margin-bottom: 25px;
+}
+
+.toolbar h2 {
+  font-size: 25px;
+}
+
+#employeeCount {
+  color: #64748b;
+  font-size: 14px;
+}
+
+#searchInput {
+  width: min(100%, 380px);
+  padding: 13px 16px;
+  border: 1px solid #cbd5e1;
+  border-radius: 10px;
+  font-size: 15px;
+  background: white;
+}
+
+#searchInput:focus {
+  outline: 2px solid #2563eb;
+  border-color: transparent;
+}
+
+.employee-grid {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(240px, 1fr));
+  gap: 20px;
+}
+
+.employee-card {
+  background: white;
+  border: 1px solid #e2e8f0;
+  border-radius: 15px;
+  padding: 24px;
+  box-shadow: 0 5px 18px #1725540a;
+  overflow-wrap: anywhere;
+}
+
+.avatar {
+  width: 52px;
+  height: 52px;
+  display: grid;
+  place-items: center;
+  border-radius: 14px;
+  background: #dbeafe;
+  color: #1d4ed8;
+  font-size: 19px;
+  font-weight: bold;
+  margin-bottom: 16px;
+}
+
+.employee-card h3 {
+  font-size: 19px;
+  margin-bottom: 4px;
+}
+
+.role {
+  color: #2563eb;
+  font-weight: bold;
+  font-size: 14px;
+}
+
+.department {
+  margin-top: 12px;
+  color: #475569;
+  font-size: 14px;
+}
+
+.email {
+  display: block;
+  margin-top: 8px;
+  color: #64748b;
+  font-size: 13px;
+}
+
+.empty-state {
+  grid-column: 1 / -1;
+  text-align: center;
+  padding: 40px 15px;
+  color: #64748b;
+}
+
+footer {
+  text-align: center;
+  padding: 25px;
+  color: #64748b;
+  font-size: 13px;
+}
+
+@media (max-width: 600px) {
+  .hero {
+    padding: 40px 16px;
+  }
+
+  .toolbar {
+    align-items: stretch;
+  }
+
+  #searchInput {
+    width: 100%;
+  }
+}
+
