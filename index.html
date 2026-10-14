@@ -1,1 +1,46 @@
 
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta name="description" content="A searchable TypeScript employee directory.">
+  <title>Employee Directory</title>
+  <link rel="stylesheet" href="style.css">
+</head>
+<body>
+  <header class="hero">
+    <p class="eyebrow">OUR TEAM</p>
+    <h1>Employee Directory</h1>
+    <p>Meet the people behind our success.</p>
+  </header>
+
+  <main class="container">
+    <section class="toolbar">
+      <div>
+        <h2>Our Employees</h2>
+        <p id="employeeCount">Loading employees...</p>
+      </div>
+      <input
+        type="search"
+        id="searchInput"
+        placeholder="Search name, role, department..."
+        aria-label="Search employees"
+      >
+    </section>
+
+    <section
+      id="employeeList"
+      class="employee-grid"
+      aria-live="polite"
+    ></section>
+  </main>
+
+  <footer>
+    <p>Employee Directory · Built with TypeScript</p>
+  </footer>
+
+  <script src="app.js" defer></script>
+</body>
+</html>
+
