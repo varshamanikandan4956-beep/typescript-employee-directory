@@ -28,7 +28,7 @@ const employees: Employee[] = [
   },
   {
     id: 3,
-    name: "Rahul Menon",
+    name: "Rahul",
     role: "Backend Developer",
     department: "Engineering",
     email: "rahul@example.com"
